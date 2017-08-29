@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/dist
+/lib/webparts/requisitionApp
+/node_modules
+/temp
+/sharepoint/solution

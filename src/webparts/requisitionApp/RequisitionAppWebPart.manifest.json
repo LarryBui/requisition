@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "6d238b12-3a36-4a70-a39a-5de9666e62a3",
+  "alias": "RequisitionAppWebPart",
+  "componentType": "WebPart",
+  "version": "*", // The "*" signifies that the version should be taken from the package.json
+  "manifestVersion": 2,
+
+  /**
+   * This property should only be set to true if it is certain that the webpart does not
+   *  allow arbitrary scripts to be called
+   */
+  "safeWithCustomScriptDisabled": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "6d238b12-3a36-4a70-a39a-5de9666e62a3",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Requisition SPFX App" },
+    "description": { "default": "Requisition list and forms" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "Requisition SPFX App",
+      "listName": "Requisitions",
+      "appConfigUrl": "~site/siteassets/requisition.json"
+    }
+  }]
+}

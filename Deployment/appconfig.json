@@ -1,0 +1,101 @@
+{
+    "daterange": "365",
+    "types": [
+       {
+            "name": "hr",
+            "displayName": "Human Resources",
+            "subTypes": [
+                {
+                    "name": "businesscards",
+                    "displayName": "Business Cards"
+                },
+                {
+                    "name": "insurance",
+                    "displayName": "Insurance"
+                },
+                {
+                    "name": "ira",
+                    "displayName": "IRA"
+                },
+                {
+                    "name": "taxforms",
+                    "displayName": "Tax Forms"
+                },
+                {
+                    "name": "expenseauthorization",
+                    "displayName": "Expense Authorization"
+                }
+            ]
+        },
+        {
+            "name": "itsupport", 
+            "displayName": "IT Support",
+            "subTypes": [
+                {
+                    "name": "accessissues",
+                    "displayName": "Access Issues"
+                },
+                {
+                    "name": "vpn",
+                    "displayName": "VPN"
+                },
+                {
+                    "name": "maintenance",
+                    "displayName": "Maintenance"
+                }
+            ]
+        },
+        {
+            "name": "purchase",
+            "displayName": "Purchase",
+            "subTypes": [
+                {
+                    "name": "furniture",
+                    "displayName": "Furniture"
+                }
+            ]
+        }
+    ],
+    "offices": [
+        {
+            "name": "irvine",
+            "displayName": "Irvine",
+            "admingroup": "Requisition Admin members",
+            "approvalMatrix":[
+                { "name": "Manager", "query": ""},
+                { "name": "Exec", "query": "250", "approvalGroup": "Requisition EXEC members" },
+                { "name": "HR", "query": "", "approvalGroup": "Requisition Irvine HR members" }
+            ]
+        },
+        {
+            "name": "lahore",
+            "displayName": "Lahore",
+            "admingroup": "Requisition Admin members",
+            "approvalMatrix":[
+                { "name": "Manager", "query": "" },
+                { "name": "Exec", "query": "250", "approvalGroup": "Requisition EXEC members" },
+                { "name": "HR", "query": "", "approvalGroup": "Requisition Lahore HR members"}
+            ]
+        },
+        {
+            "name": "dubai",
+            "displayName": "Dubai",
+            "admingroup": "Requisition Admin members",
+            "approvalMatrix":[
+                { "name": "Manager", "query": ""},
+                { "name": "Exec", "query": "250", "approvalGroup": "Requisition EXEC members"},
+                { "name": "HR", "query": "", "approvalGroup": "Requisition Dubai HR members" }
+            ]
+        },
+        {
+            "name": "islamabad",
+            "displayName": "Islamabad",
+            "admingroup": "Requisition Admin members",
+            "approvalMatrix":[
+                { "name": "Manager", "query": ""},
+                { "name": "Exec", "query": "250", "approvalGroup": "Requisition EXEC members"},
+                { "name": "HR", "query": "", "approvalGroup": "Requisition Islamabad HR members" }
+            ]
+        }
+    ]
+}

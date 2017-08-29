@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "Custom Requisition Webpart",
+    "id": "d19f7d5b-e891-4979-a278-36720f475bdc",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/requisition-webpart.sppkg"
+  }
+}

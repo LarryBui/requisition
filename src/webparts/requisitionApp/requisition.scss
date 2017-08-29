@@ -1,0 +1,129 @@
+$btn-primary: #698152;
+$btn-cancel: #d77a0d;
+$form-width: 800px;
+$input-bg: #698152;
+$border-margin: 15px;
+$readonly-bg: #cccccc;
+$font-color:white;
+$header-color:#d77a0d;
+$hover-bg:#d97a0e;
+$border-color:#b2c1a4;
+$border-required:#a94442;
+$border-good:#42A948;
+$font-base:1em;
+$btn-primary-hover:#79975c;
+
+
+
+.req-app {
+	.req-form {
+		width:$form-width;
+		color: #808080;
+	}
+	.radio,.checkbox {
+		margin-top: 0px;
+	}
+  .radio {
+		+ .radio {
+    	margin-top: 0px;
+		}
+	}
+	.checkbox {
+		+ .checkbox {
+			margin-top: 0px;	
+		}
+	}
+
+	input[type=button], input[type=reset], input[type=submit], button {
+		background-color: $btn-primary;
+		border-color:$readonly-bg;
+		color:$font-color;
+		font-size: $font-base + (20/100);
+	}
+
+	input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover, button:hover {
+		background-color:$btn-primary-hover;
+		border-color:$readonly-bg;
+		color:$font-color;
+	}
+	.form-control:focus, input[type=password]:focus, input[type=text]:focus, select:focus, textarea:focus,.ms-inputBoxActive, .ms-inputBox.ms-inputBoxActive:hover {
+		border-color:$input-bg;
+		border-width:2px;
+	}
+	.input-readonly, input.input-readonly {
+		background:$readonly-bg;
+	}
+
+	.table-responsive {
+		display:table;
+	}
+
+	.form-group-header {
+		font-size:$font-base + (75/100);
+		font-weight:bold;
+		padding-bottom:5px;
+		padding-top:1.25rem;
+		color:$header-color; 
+		border-bottom:1px solid #b2c1a4;
+	}
+	.btn-primary {
+		background-color:$btn-primary;
+	}
+	.btn-link {
+		color:$btn-primary;
+	}
+
+	.btn-cancel {
+		background-color:$btn-cancel; 
+		border-color:$border-color;
+	}
+
+	.btn-cancel:hover {
+		background-color:$btn-cancel; 
+	}
+
+	.form-buttons {
+		padding:15px;
+		text-align:right;
+	}
+	.form-buttons {
+		> div {
+			display:inline;
+			padding-right:15px;
+		}
+		> button {
+			margin-right: $border-margin;
+		}
+	}
+
+	.app-main {
+		padding:0px;
+		>.card-header {
+			background:rgba(118,170,69,1);
+			font-weight:bold;
+		}
+		>.card-body {
+			padding:0px 1.25rem;
+		}
+	}
+
+	.ng-valid[required], .ng-valid.required  {
+		border-left: 5px solid $border-good; /* green */
+	}
+
+	.ng-invalid:not(form)  {
+		border-left: 5px solid $border-required; /* red */
+	}
+
+	.admin-view {
+		padding-left:0px;
+		.nav-link {
+			padding-left:0px;
+		}
+	}
+
+	.req-admin {
+		background:#dff0d8;
+	}
+	
+}
