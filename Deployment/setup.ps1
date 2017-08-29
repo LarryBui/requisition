@@ -2,8 +2,8 @@
 #Install-Module SharePointPnPPowerShellOnline
 get-command -Module *pnp*
 
-#$configFilePath = "C:\VSRepositories\Xelleration\Requisition\Docs\requisition.json"
-$webUrl = "https://xelleration.sharepoint.com/sites/developers/requisition"
+#$configFilePath = "C:\VSRepositories\\requisition.json"
+$webUrl = "https://xxx/sites/developers/requisition"
 $listName = "Requisitions"
 
 Connect-PnPOnline -Url $webUrl
